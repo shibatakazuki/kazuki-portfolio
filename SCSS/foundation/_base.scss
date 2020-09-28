@@ -1,0 +1,40 @@
+// ↓共通部分
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%; // フォントを10pxに設定: //
+}
+body{
+    font-family: 'Noto Sans JP', 'MyYuGothicM', 'YuGothic', '-apple-system', 'system-ui', 'Hiragino kaku Gothic ProN', 'Meiryo', 'Verdana', 'arial', 'helvetica', 'sans-serif', 'FontAwesome', 'M+ 1', 'Josefin Sans', sans-serif ;
+    font-size: 1.4rem;
+    
+}
+
+a{ 
+    text-decoration: none ;    
+}
+
+li, dl, dt,dd {
+    list-style: none;
+}
+hr{
+    width: 10%;
+    margin: 3rem 0;
+}
+
+// ↓メディアクエリ
+@mixin breakpoint($point) {
+    @if $point == mobile {
+        @media (min-width: 481px) {
+            @content;
+        }
+    }
+
+    @if $point == tablet {
+        @media (min-width: 769px) {
+            @content;
+        }
+    }
+
+}
+// ↑メディアクエリ
