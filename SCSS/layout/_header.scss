@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.l-header{
+    display: flex;
+    padding-top: 2rem;
+    width: 30rem;
+    height: 5rem;
+    z-index: 100;
+    position: absolute;
+    right:15rem;
+    position: fixed;
+
+        
+    &__nav {
+        display: flex;
+        font-size: 2rem;
+
+
+
+        &__list , &__list__mobile{
+            margin: 0 2rem 0 0;
+            a{
+                color: #FEFEFE;
+                text-decoration: none;
+    
+            }
+
+    }
+    &__list__mobile{
+        @include breakpoint( tablet){
+            display: none;
+
+        }
+    }
+
+
+
+    }
+}

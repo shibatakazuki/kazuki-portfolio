@@ -73,6 +73,7 @@
 
 .slick-slide img {
   display: block;
+  height: 100%;
 }
 
 .slick-slide.slick-loading img {
@@ -123,10 +124,10 @@
   height: 20px;
   width: 20px;
   line-height: 0px;
-  font-size: 0px;
+  font-size: 5px;
   cursor: pointer;
   background: transparent;
-  color: transparent;
+  color: black;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -166,7 +167,8 @@
 }
 
 .slick-prev {
-  left: -25px;
+  left: 25px;
+  z-index: 100;
 }
 
 [dir="rtl"] .slick-prev {
@@ -183,7 +185,8 @@
 }
 
 .slick-next {
-  right: -25px;
+  z-index: 100;
+  right: 25px;
 }
 
 [dir="rtl"] .slick-next {
@@ -200,13 +203,9 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: 60px;
   list-style: none;
   display: block;
   text-align: center;
@@ -233,8 +232,8 @@
   width: 20px;
   outline: none;
   line-height: 0px;
-  font-size: 0px;
-  color: transparent;
+  font-size: 15px;
+  color: #FEFEFE;
   padding: 5px;
   cursor: pointer;
 }
@@ -302,15 +301,16 @@ html, body {
 }
 
 .slider {
-  width: 50%;
+  width: 100%;
 }
 
 .slick-slide {
-  margin: 0px 20px;
+  margin: 0px 2px;
 }
 
 .slick-slide img {
-  width: 100%;
+  width: 100vw;
+  height: 834px;
 }
 
 .slick-prev:before,
@@ -330,5 +330,101 @@ html, body {
 
 .slick-current {
   opacity: 1;
+}
+
+.l-container {
+  font-family: 'Josefin Sans';
+}
+
+.l-frontpage {
+  z-index: 50;
+  position: relative;
+  height: 834px;
+}
+
+.l-frontpage .slider {
+  width: 100%;
+  height: 100%;
+}
+
+.l-frontpage__pagetitle {
+  font-size: 8rem;
+  width: 67rem;
+  color: #FEFEFE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+  width: 30rem;
+  height: 5rem;
+  z-index: 100;
+  position: absolute;
+  right: 15rem;
+  position: fixed;
+}
+
+.l-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+.l-header__nav__list, .l-header__nav__list__mobile {
+  margin: 0 2rem 0 0;
+}
+
+.l-header__nav__list a, .l-header__nav__list__mobile a {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .l-header__nav__list__mobile {
+    display: none;
+  }
+}
+
+.l-about {
+  height: 834px;
+  background-color: #1AF1E7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.l-about__box {
+  height: 695px;
+  width: 1172px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  z-index: 50;
+}
+
+.l-about__box #svg-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(/img/l-skills-background-img.jpg);
+  z-index: 30;
 }
 /*# sourceMappingURL=style.css.map */

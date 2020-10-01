@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.l-frontpage{
+    z-index: 50;
+    position: relative;
+    height: 834px;
+    .slider{ 
+        width: 100%;
+        height: 100%;
+
+
+
+    }
+    &__pagetitle{
+        font-size: 8rem;
+        width: 67rem;
+        color: #FEFEFE;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    }
+}

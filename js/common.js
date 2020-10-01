@@ -4,8 +4,8 @@ $( function() {
         infinite: true,
         centerMode: true,
         autoplay: true,
-        slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 600,

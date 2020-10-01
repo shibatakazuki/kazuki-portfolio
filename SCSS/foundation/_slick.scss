@@ -9,15 +9,16 @@ html, body {
   }
 
   .slider {
-      width: 50%;
+      width: 100%;
   }
 
   .slick-slide {
-    margin: 0px 20px;
+    margin: 0px 2px;
   }
 
   .slick-slide img {
-    width: 100%;
+    width: 100vw;
+    height: 834px;
   }
 
   .slick-prev:before,
