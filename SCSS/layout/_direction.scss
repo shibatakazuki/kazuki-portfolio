@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.l-direction{
+    height: 834px;
+    width: 100%;
+    background-color: #FAF8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__box{
+        @extend .l-about__box;
+    }
+}

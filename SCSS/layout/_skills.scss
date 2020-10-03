@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.l-skills{
+    height: 834px;
+    width: 100%;
+    background-image:url(/img/l-skills-background-img.jpg);
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__box{
+        @extend .l-about__box;
+    }
+    #l-skills__svg-bg{
+        position: absolute;
+        width: 100%;
+        height: 10rem;
+        top: 74rem;
+        background-image: url(/img/l-skills-background-img.jpg);
+        background-size: 100% auto;
+        z-index: 30;
+    }
+}
