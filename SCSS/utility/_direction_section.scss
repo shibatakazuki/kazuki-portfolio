@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.u_direction_section{
+    width: auto;
+    height: 56vw;
+    margin: 3vw auto 0;
+    position: absolute;
+    &__photographer{
+        width: auto;
+        height: 28vw;
+    
+        h2{
+            font-size: 3rem;
+            color: $text-glay;
+            border-bottom: $text-glay 1px solid;
+            line-height: 2vw;
+            margin-bottom: 10px;
+            width: auto;
+        }
+        .--list{
+            position: relative;
+            display: flex;
+            li:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 0 30px rgba(0,0,0,.2);
+                transition: all  0.2s ease;
+            }
+
+            &__ryo, &__onodi{
+                margin: 0 1vw;
+                border: solid $text-glay 1px;
+                height: 26vw;
+                line-height: 1.5vw;
+        
+                p{
+                    font-size: 1.5vw;
+                    color: $text-glay;
+                }
+            }
+        }
+    }
+        &__illustrator{
+            width: auto;
+            height: 28vw;
+            margin: 2vw 0 0 0;
+            h2{
+                font-size: 3rem;
+                color: $text-glay;
+                border-bottom: $text-glay 1px solid;
+                line-height: 2vw;
+                margin-bottom: 10px;
+                width: auto;
+            }
+            .--list{
+                position: relative;
+                display: flex;
+                margin: 0;
+                li:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 0 30px rgba(0,0,0,.2);
+                    transition: all  0.2s ease;
+                }
+    
+                &__dazu, &__akisa{
+                    margin: 0 1vw;
+                    border: solid $text-glay 1px;
+                    height: 26vw;
+                    width: auto;
+                    line-height: 1.5vw;
+                    p{
+                        font-size: 1.5vw;
+                        color: $text-glay;
+                    }
+                }
+            }
+    }
+
+    img{
+        width: 30vw;
+        height: 24vw;
+    }
+}

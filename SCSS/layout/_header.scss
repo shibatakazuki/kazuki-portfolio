@@ -8,15 +8,22 @@
     position: absolute;
     right:15rem;
     position: fixed;
+    @include breakpoint( mobile){
+        width: auto;
+    }
 
         
     &__nav {
         display: flex;
         font-size: 2rem;
+        @include breakpoint( mobile){
+            margin: 0 auto;
+
+        }
 
 
 
-        &__list , &__list__mobile{
+        &__list{
             margin: 0 2rem 0 0;
             a{
                 color: #FEFEFE;
@@ -25,14 +32,8 @@
             }
 
     }
-    &__list__mobile{
-        @include breakpoint( tablet){
-            display: none;
-
-        }
-    }
+ }
 
 
 
     }
-}

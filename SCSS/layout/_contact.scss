@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.l-contact{
+    height: 57.93vw;
+    width: 100%;
+    background-color: #368F8B;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    
+    &__slot{
+        font-size: 2rem;
+        color: #FEFEFE;
+        display: flex;
+        text-align: left;
+        margin: auto;
+        flex-direction: column;
+        width: 60vw;
+
+        
+        &__section{
+            margin: 3vw;
+            display: flex;
+            flex-direction: column;
+            width: 60vw;
+            height: auto;
+        &__form{
+            background-color: #FEFEFE;
+            border-radius: 2px;
+            height: 2vw;
+            margin-top: 1vw;
+            border: #5C6D70 1px solid;
+            .--name{
+                width: 8vw;
+            }
+
+        }
+
+        }
+    }
+        
+    
+}
+input[type="text"]  {
+    width:70%;
+    border-radius: 5px;
+}
+input[type="email"]{
+    width: 70%;
+    border-radius: 5px;
+}
+textarea[type="message"]{
+    width: 100%;
+    height: 13vw;
+    border-radius: 5px;
+}
+input[type="button"],
+input[type="submit"]{
+    width: 15vw;
+    height: 2vw;
+    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 1vw 5.5vw;
+    font-size: 1.5vw;
+    background-color: rgba(92,109,112,10);
+    color: #FEFEFE;
+    opacity: 0.8;
+            
+}
+
+#l-contact__svg-bg{
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    top: 96%;
+    background-color: #368F8B;
+    z-index: 30;
+}

@@ -25,13 +25,13 @@ hr{
 // ↓メディアクエリ
 @mixin breakpoint($point) {
     @if $point == mobile {
-        @media (min-width: 481px) {
+        @media (max-width: 481px) {
             @content;
         }
     }
 
     @if $point == tablet {
-        @media (min-width: 769px) {
+        @media (max-width: 769px) {
             @content;
         }
     }

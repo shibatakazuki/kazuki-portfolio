@@ -12,7 +12,20 @@
         border: solid 1px #707070;
         background-color: #ffffff;
         border-radius: 1rem;
-        z-index: 50;}
+        z-index: 50; 
+    }
+    &__title{
+        text-align: center;
+        width: 17rem;
+        font-size: 5rem;
+        font-weight: 400;
+        margin-top: 5rem;
+        color: #5C5C5C;
+        border-bottom: #5C5C5C 1px solid;
+        margin: 0 auto;
+        padding-top: 5rem;
+
+    }
 
     #l-about__svg-bg{
         position: absolute;

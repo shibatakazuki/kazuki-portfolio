@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.u_about_caption{
+    width: 20vw;
+    height: 35vw;
+    text-align: center;
+    justify-content: right;
+    margin: 8vw 0 5vw 48vw;
+    color: #5C6D70;
+
+&__title{
+    font-size: 15px;
+
+}
+&__name{
+    font-size: 40px;
+    padding: 0.6vw 0 ;
+}
+&__text{
+    line-height: 2.5rem;
+}
+&__logo{
+    width: 8vw;
+    height: 3vw;
+    margin: 1vw ;
+    display: flex;
+    padding:0 1vw ;
+    .--twitter{
+        height: 3vw;
+        width: 5vw;
+    }
+    .--git{
+        height: 3vw;
+        width: 5vw;
+    }
+
+}
+
+}

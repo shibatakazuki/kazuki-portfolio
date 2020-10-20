@@ -66,6 +66,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    
     [dir="rtl"] & {
         float: right;
     }
@@ -96,6 +97,7 @@
         height: auto;
         border: 1px solid transparent;
     }
+    
 }
 .slick-arrow.slick-hidden {
     display: none;

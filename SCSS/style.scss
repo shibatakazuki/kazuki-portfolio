@@ -13,6 +13,7 @@
 @import "foundation/_base";
 @import "foundation/_reset";
 @import "foundation/_slick";
+@import "foundation/_variables";
 
 
 // ==========================================================================
@@ -26,8 +27,22 @@
 @import "layout/_skills";
 @import "layout/_direction";
 @import "layout/_service";
+@import "layout/_contact";
+
+// ==========================================================================
+// project
+// ==========================================================================
+
+@import "project/_box";
 
 
+// ==========================================================================
+// utility
+// ==========================================================================
 
+@import "utility/_about";
+@import "utility/skill_section";
+@import "utility/_service_box";
+@import "utility/_direction_section";
 
 
