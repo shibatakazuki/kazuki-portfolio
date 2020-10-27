@@ -8,6 +8,12 @@
     &__photographer{
         width: auto;
         height: 28vw;
+        @include breakpoint(tablet){
+            width: 80vw;
+            position: absolute;
+            left: 0%;
+        }
+
     
         h2{
             font-size: 3rem;
@@ -16,10 +22,17 @@
             line-height: 2vw;
             margin-bottom: 10px;
             width: auto;
+            
+    
         }
         .--list{
             position: relative;
             display: flex;
+            @include breakpoint(tablet){
+            flex-direction: column;
+            width: 80vw;
+            
+            }
             li:hover{
                 transform: translateY(-5px);
                 box-shadow: 0 0 30px rgba(0,0,0,.2);
@@ -31,6 +44,11 @@
                 border: solid $text-glay 1px;
                 height: 26vw;
                 line-height: 1.5vw;
+                @include breakpoint(tablet){
+                    flex-direction: column;
+                    width: 80vw;
+                    margin: 10vw auto;
+                }        
         
                 p{
                     font-size: 1.5vw;
@@ -55,6 +73,11 @@
                 position: relative;
                 display: flex;
                 margin: 0;
+                @include breakpoint(tablet){
+                    display: inline-block;
+                    width: 80vw;
+                    
+                    }
                 li:hover{
                     transform: translateY(-5px);
                     box-shadow: 0 0 30px rgba(0,0,0,.2);
@@ -78,5 +101,11 @@
     img{
         width: 30vw;
         height: 24vw;
+        @include breakpoint(tablet){
+            width: 80vw;
+            height: 60vw;
+            }
+           
+
     }
 }

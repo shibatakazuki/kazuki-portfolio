@@ -19,6 +19,8 @@ html, body {
   .slick-slide img {
     width: 100vw;
     height: 834px;
+    object-fit: contain;
+
   }
 
   .slick-prev:before,

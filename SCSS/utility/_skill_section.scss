@@ -4,26 +4,58 @@
     height: 38vw;
     display: flex;
     margin: 2vw auto;
+    @include breakpoint(tablet){
+        display: block;
+        padding-right: 15vw;
+        margin-top: 5vw;
+    }
+    img{
+        width: 6vw;
+        height: 6vw;
+        @include breakpoint(tablet){
+            width: 10vw;
+            height: 10vw;
+            margin-top: 1vw;
+}
+    }
+    p{
+        font-size: 45px;
+        color: $text-glay;
+        height: 6vw;
+        width: 30vw;
+        line-height: 7vw;
+        padding-left: 4vw;
+        white-space: nowrap;
+        @include breakpoint(tablet){
+            font-size: 33px;
+            line-height: 2vw;
+            margin-top: 6vw;
+            
+        }
+        
+
+
+    }
     &__right{
         margin: 0 3vw;
         width: 30vw;
         height: 39vw;
         padding: 1vw;
+        @include breakpoint(tablet){
+            margin: 0 auto;
+
+            
+        }
+
         &__list{
             display: flex;
             padding: 1.2vw 0;
-            img{
-                width: 6vw;
-                height: 6vw;
+            @include breakpoint(tablet){    
+            padding: 3vw;
+            height: 15vw;
+
             }
-            p{
-                font-size: 45px;
-                color: $text-glay;
-                height: 6vw;
-                width: 30vw;
-                line-height: 7vw;
-                padding-left: 4vw;
-            }
+          
         }
     }
         &__left{
@@ -31,24 +63,18 @@
             width: 30vw;
             height: 39vw;
             padding: 1vw;
+            @include breakpoint(tablet){
+                margin: 20vw 12vw;
+                
+            }
             &__list{
                 display: flex;
                 padding: 1.2vw 0;
-                img{
-                    width: 6vw;
-                    height: 6vw;
-                }
-                p{
-                    font-size: 45px;
-                    color: $text-glay;
-                    height: 6vw;
-                    width: 30vw;
-                    line-height: 7vw;
-                    padding-left: 4vw;
-                    
-            
-            
-                }
+                @include breakpoint(tablet){    
+                    padding: 3vw;
+                    height: 15vw;
+                }        
+                
                 
     
             }

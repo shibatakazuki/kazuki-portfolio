@@ -17,5 +17,8 @@
         background-image: url(/img/l-skills-background-img.jpg);
         background-size: 100% auto;
         z-index: 30;
+        @include breakpoint(tablet){
+            top: 73.5rem;
+        }
     }
 }
